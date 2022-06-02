@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            height: 50px;
+        }
+        input{
+            height: 50px;
+            margin-left: 20px;
+        }
+        .dd{
+            color: red;
+            text-transform: bold;
+        }
+    </style>
+    <script>
+        function XuatThongTin()
+        {
+        document.getElementById("TenNG").innerHTML = document.forms[F1]["txt_namesender"].valua;
+        document.getElementById("EmailNG").innerHTML = document.forms[F1]["txt_emailsender"].valua;
+        document.getElementById("PhoneNG").innerHTML = document.forms[F1]["txt_phoneNumsender"].valua;
+        document.getElementById("TenNN").innerHTML = document.forms[F1]["txt_namereciever"].valua;
+        document.getElementById("PhoneNN").innerHTML = document.forms[F1]["txt_phoneNumreciever"].valua;
+        document.getElementById("AddressNN").innerHTML = document.forms[F1]["txt_addreciever"].valua;
+        document.getElementById("CityNN").innerHTML = document.forms[F1]["DDl_city"].valua;
+        document.getElementById("DistrictNN").innerHTML = document.forms[F1]["DDl_District"].valua;
+        }
+    </script>
+    <script>
+        function GuiSangTrangKhac(){
+            sessionStorage.tenng = document.forms[F1]["txt_namesender"].valua;
+            sessionStorage.emailng = document.forms[F1]["txt_emailsender"].valua;
+            sessionStorage.phoneng = document.forms[F1]["txt_phoneNumsender"].valua;
+            sessionStorage.tennn = document.forms[F1]["txt_namereciever"].valua;
+            sessionStorage.phonenn = document.forms[F1]["txt_phoneNumreciever"].valua;
+            sessionStorage.addressnn = document.forms[F1]["txt_addreciever"].valua;
+            sessionStorage.citynn = document.forms[F1]["DDl_city"].valua;
+            sessionStorage.districtnn = document.forms[F1]["DDl_District"].valua;
+        }
+    </script>
+</head>
+<body>
+    <font name="F1" method="post" style="border:#666 solid 1px; width:40%; margin:0 auto; border-radius: 5px;">
+        <table style="margin: 0 auto;">
+            <tr bgcolor="#cccccc">
+                <td colspan="2"><h3 style="margin-left: 20px;">Thông Tin Người Gửi </h3></td>
+            </tr>
+
+            <tr>
+                <td>Mả Sản Phẩm</td>
+                <td><input type="text" placeholder="nhập mã sản phẩm" size="20"></td>
+            </tr>
+
+            <tr>
+                <td>Người Gửi</td>
+                <td><input type="text" placeholder="nhập họ và tên" size="100" id="txt_namesender" name="txt_namesender"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" placeholder="nhập Email" size="100" id="txt_emailsender" name="txt_emailsender"></td>
+            </tr>
+            <tr>
+                <td>Điện Thoại</td>
+                <td><input type="number" placeholder="nhập số Điện thoại" size="100" id="txt_phoneNumsender" name="txt_phoneNumsender"></td>
+            </tr>
+        </table>
+        <table style="margin:0 auto">
+            <tr bgcolor='#cccccc'>
+                <td colspan="2"><h3 style="margin-left: 20px;">Thông Tin Người Nhận </h3></td>
+            </tr>
+            <tr>
+                <td>* Người Nhận</td>
+                <td><input type="text" placeholder="nhập họ và tên" size="100" id="txt_namereciever" name="txt_namereciever"></td>
+            </tr>
+            <tr>
+                <tr>
+                    <td>* Điện Thoại</td>
+                    <td><input type="number" placeholder="nhập số Điện thoại" size="100" id="txt_phoneNumreciever" name="txt_phoneNumreciever"></td>
+                </tr>
+            </tr>
+            <tr>
+                <td>* Địa Chỉ</td>
+                <td><input type="text" placeholder="nhập Địa Chỉ" size="100" id="txt_addreciever" name="txt_addreciever"></td>
+            </tr>
+            <tr>
+                <td>* Tỉnh/TP</td>
+                <td><select name="DDl_city" id="DDl_city" style="margin-left:20px;width: 620px;height: 50px;">
+                        <option value="TP.HCM nội thành">TP.HCM nội thành</option>
+                        <option value="Hà Nội">Hà Nội</option>
+                        <option value="Huế">Huế</option>
+                        <option value="Đà Nẵng">Đà Nẵng</option>
+                        <option value="Quảng Ngãi">Quảng Ngãi</option>
+                        <option value="Cần Thơ">Cần Thơ</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>* Quận</td>
+                <td><select name="DDl_District" id="DDl_District" style="margin-left:20px;width: 620px;height: 50px;">
+                        <option value="Quận 1">Quận 1</option>
+                        <option value="Quận 2">Quận 2</option>
+                        <option value="Quận 3">Quận 3</option>
+                        <option value="Quận Tân Phú">Quận Tân Phú</option>
+                        <option value="Quận Tân Bình">Quận Tân Bình</option>
+                        <option value="Thủ Đức">Thủ Đức</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <center><input type="button" value="Gửi Thông Tin" onclick="XuatThongTin()"/><a href="index.html"><input type="button" value="Gửi Thông tin Sang Trang đầu" style="background:rgb(255, 0, 55);" onclick="GuiSangTrangKhac()"></a></center>
+    </font>
+    
+        </table>
+    </div>
+    
+</body>
+</html>

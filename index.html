@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WedBook</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="fonts/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <style>
+        #footer{
+            
+            clear: both;
+            margin-bottom: 20px;
+        }
+            
+    </style>
+    
+</head>
+<body>
+    
+
+    <div id="header">
+        <div id="khungdau">
+            <img id="logoNhom" src="./img/logo2.png" alt="">
+            <div style="width: 250px;" class="DanhMuc"><p><i class="DanhMuc ti-menu-alt"></i>DANH MỤC SẢN PHẨM</p>
+                <ul class="MeNu">
+                    <li><a href="#">Sách Bán Chạy</a></li>
+                    <li><a href="#SM">Sách Mới</a></li>
+                    <ul class="MeNu2">
+                        <li><a href="#Sachmoi"> Sách Mới Nhất</a></li>
+                    </ul>
+                        
+                
+                    <li><a href="#SKH">Sách Khoa Học</a>
+                    <ul class="MeNu2" id="KHvt">
+                        <li><a href="#KHVT">Khoa Học Viễn Tưởng</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#STH">SÁCH Tin Học</a>
+                        <ul class="MeNu2">
+                            <li><a href="#TH">Tin Học</a></li>
+                    
+                        </ul>
+                    </li>
+                    <ul class="MeNu2">
+                        <li><a href="#TA">Tiếng Anh</a></li>
+                        <li><a href="#THTD">Tiếng Hàn</a></li>
+                        <li><a href="#TN">Tiếng Nhật</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#TRUYEN">Truyện</a>
+                        <ul class="MeNu2">
+                            <li><a href="#TTHUYET">Tiểu Thuyết</a></li>
+                            <li><a href="#TNT">Ngôn Tình</a></li>
+                            <li><a href="#TTT">Trinh Thám</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Sách Giáo Khoa</a></li>
+                </ul>
+                
+            </div>
+            <div><a href="./index.html" class="heder">Trang chủ</a></div>
+            <div><a class="heder" href="./gioithieu.html">Giới thiệu</a></div>
+            <div><a class="heder" href="./kygoisach.html">Chuyển Sản phẩm</a></div>
+            <div><a href="./dangnhap.html" class="heder">Đăng Nhập</a></div>
+            
+            <div class="CSKH ti-github">
+                CSKH
+            </div>
+            <div class="CSKH ti-bell">
+                Thông báo
+            </div>
+        </div>
+    </div>
+    
+    <div id="logo">
+        <p class="TKS" style="background-color: rgb(0, 21, 255);margin-left: 30%;width: 200px;text-align: center;">TÌM KIẾM SẢN PHẨM</p>
+        <p><input type="text" placeholder=" Tìm Kiếm Sách"></p>
+        <div class="ti-search"></div>
+    </div>
+
+    <div id="Thayimg">
+        <img id="imgs" src="./img/h15.jpg" onclick="getimg()" alt="">
+        <img class="logonhom" src="./img/logo4.jpg" alt="">
+        <img class="logonhom" src="./img/sach.jfif" alt="">
+    </div>
+
+
+    <div id="content">
+        <div class="khungND">
+            <h3 class="ChuDe" id="SM">Sách Mới</h3>
+            <h4 class="ChuDe" id="Sachmoi">Sách Mới Nhất </h4>
+            <div class="TTsach">
+                <div class="GT">
+                    <a href="https://tiki.vn/sach-doi-co-that-nhat-nheo-hay-do-ta-vo-vi-p115323121.html?itm_campaign=SRC_YPD_TKA_PLA_UNK_ALL_UNK_UNK_UNK_UNK_X.143744_Y.1464342_Z.2494296_CN.Product-Ads-22%252F05%252F2022&itm_medium=CPC&itm_source=tiki-ads&spid=115323122">
+                        <img src="./img/sachmoi1.jpg" alt="">
+                        <p>Đời Có Thật Nhạt Nhẽo Hay Do Ta Vô Vị</p>
+                        <p>Tác Giả: Nhà Xuất Bản Thanh Niên </p>
+                        <p>Giá Bán: 64.000 đ </p>
+                        <p>Giảm 30%  <time datetime="2022-28-05 00:00">tháng sáu năm nay</time>.</p>
+                    </a>
+                </div>
+                    <div  class="mua">
+                        <a href=""><button>MUA</button></a>
+                    </div>
+            </div>
+                    
+        <div class="khungND">
+            <h3 style="margin-top: 10px;" class="ChuDe" id="SKH">SÁCH KHOA HỌC</h3>
+            <h4 class="ChuDe" id="KHVT">KHOA HỌC VIỄN TƯỞNG</h4>
+            <div class="TTsach">
+                <div class="GT">
+                    <a href="https://tiki.vn/nguoi-ve-tu-sao-hoa-p494125.html">
+                        <img src="./img/z2647215236441_4b75695254350df3a97baa6a5ac7119f.jpg" alt="">
+                            <p>Người Về Từ Sao Hỏa</p>
+                            <p>Tác Giả: ANDY WEIR</p>
+                            <p>Giá Bán: 95.000 đ</p></a>
+                </div>
+                <div class="mua">
+                        <a href="" class="mua"><button>MUA</button></a>
+                </div>
+            </div>
+            <div class="TTsach">
+                <div class="GT">
+                    <a href="https://tiki.vn/bi-kip-qua-giang-vao-ngan-ha-p836022.html">
+                        <img src="./img/bikipquagiangvaonganha.jpg" alt="">
+                        <p>Bí Kíp Quá Gian Vào Ngân Hà</p>
+                        <p>Tác Giả: DOUGIAS ADAMS</p>
+                        <p>Giá Bán: 150.000 đ</p>
+                        </a>
+                </div>
+                <div class="mua">
+                    <a href="" class="mua"><button>MUA</button></a>
+                </div>
+            </div>
+            <div class="TTsach">
+                <div class="GT">
+                    <a href="https://tiki.vn/george-va-vu-no-big-bang-p551417.html">
+                        <img src="./img/z2647278059941_e3cfd95fa61c44e0d2ed4e2b5fb08c1f.jpg" alt="">
+                        <p>George Và Vụ Nổ Big Bang</p>
+                        <p>Tác Giả: Stephen Hawking</p>
+                        <p>Giá Bán: 99.000 đ</p>
+                        </a>
+                </div>
+                <div class="mua">
+                    <a href=""><button>MUA</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="khungND">
+            <h3 class="ChuDe" id="STH">SÁCH TIN HỌC</h3>
+            <h4 class="ChuDe" id="TH">TIN HỌC </h4>
+            <div class="TTsach">
+                <div class="GT">
+                    <a href="https://tiki.vn/loi-song-toi-gian-thoi-cong-nghe-so-p54380457.html?spid=54380458"">
+                        <img src="./img/h13.jpg" alt="">
+                        <p>Lối Sống Tối Giản Thời Công Nghệ Số</p>
+                        <p>Tác Giả:  Cal Newport</p>
+                        <p>Giá Bán: 98.800 đ</p>
+                    </a>
+                </div>
+                    <div  class="mua">
+                        <a href=""><button>MUA</button></a>
+                    </div>
+                    <div class="TTsach">
+                        <div class="GT">
+                            <a href="https://tiki.vn/combo-sach-thanh-thao-tin-hoc-van-phong-p173156781.html?spid=173156785">
+                                <img src="./img/tinhoc2.png" alt="">
+                                <p>Tin Học Văn Phòng</p>
+                                <p>Tác Gia:  Không Rỏ</p>
+                                <p>Giá Bán: 119.000 d</p>
+                            </a>
+                        </div>
+                            <div  class="mua">
+                                <a href=""><button>MUA</button></a>
+                            </div>
+            </div>
+            <div class="TTsach">
+                <div class="GT">
+                    <a href="https://tiki.vn/thuc-hanh-microsoft-word-excel-powerpoint-2016-bang-cac-tuyet-chieu-sach-kem-theo-cd-bai-tap-tai-ban-nam-2020-p55582071.html?spid=55582072">
+                        <img src="./img/tinhoc3.png" alt="">
+                        <p>Thực Hành Microsoft Word - Excel - PowerPoint 2016 (Tái bản năm 2020)</p>
+                        <p>Tác Giả:  Nhà Xuất Bản</p>
+                        <p>Giá Bán: 69.000 d</p>
+                    </a>
+                </div>
+                    <div  class="mua">
+                        <a href=""><button>MUA</button></a>
+                    </div>
+    </div>
+        <div class="khungND">
+                <h3 class="ChuDe" id="SNN">SÁCH NGOẠI NGỮ</h3>
+                <h4 class="ChuDe" id="TA">TIẾNG ANH</h4>
+                <div class="TTsach">
+                    <div class="GT">
+                        <a href="https://tiki.vn/vua-luoi-vua-ban-van-gioi-tieng-anh-p529363.html?spid=249653&utm_source=google&utm_medium=cpc&utm_campaign=SEA_NBR_GGL_SMA_DTP_ALL_VN_BK_UNK_UNK_C.ALL_X.12507845980_Y.118674733323_V.249653_W.DT_A.1257613205253_T.pla-1257613205253_O.UNK&gclid=Cj0KCQjw6ZOIBhDdARIsAMf8YyEmVkxwk59-SyQnPHMjCIbTECvvPwtHsXfpAlmQRYGVLHN83eQRGd8aAnlcEALw_wcB">
+                            <img src="./img/h5.jpg" alt="">
+                            <p>Vừa Lười Vừa Bận Vẫn Giỏi Tiếng Anh</p>
+                            <p>Tác Giả: Nguyễn Văn Hiệp</p>
+                            <p>Giá Bán: 110.000 đ</p>
+                            </a>
+                    </div>
+                    <div  class="mua">
+                        <a href=""><button>MUA</button></a>
+                    </div>
+            </div>
+            <div class="TTsach">
+                    <div class="GT">
+                        <a href="https://tiki.vn/luyen-sieu-tri-nho-tu-vung-tieng-anh-dung-kem-app-p435425.html?spid=140609&utm_source=google&utm_medium=cpc&utm_campaign=SEA_NBR_GGL_SMA_DTP_ALL_VN_ALL_UNK_UNK_C.ALL_X.10625984613_Y.106657549322_V.140609_W.c_A.1257613205413_O.UNK&gclid=CjwKCAjwo4mIBhBsEiwAKgzXONR-mdY_uHmKueLK_hvLcTHSDbUToYbO4xA2n178KAUsJKxh_uoi8BoCmL4QAvD_BwE">
+                            <img src="./img/h6.jpg" alt="">
+                            <p>Luyện Siêu Trí Nhớ Từ Vựng Tiếng Anh (Dùng Kèm App)</p>
+                            <p>Tác Giả: Nguyễn Anh Đức</p>
+                            <p>Giá Bán: 125.000 đ</p>
+                            </a>
+                    </div>
+                    <div  class="mua">
+                        <a href=""><button>MUA</button></a>
+                    </div>
+            </div>
+            <div class="TTsach">
+                <div class="GT">
+                    <a href="https://tiki.vn/combo-2-sach-hack-nao-1500-hack-nao-ngu-phap-tang-app-hoc-phat-am-va-ngu-phap-lam-chu-tu-vung-va-nam-chac-ngu-phap-tieng-anh-chi-sau-2-thang-p68169578.html?spid=68169579&utm_source=google&utm_medium=cpc&utm_campaign=SEA_NBR_GGL_SMA_DTP_ALL_VN_BK_UNK_UNK_C.ALL_X.12507845980_Y.118674733323_V.68169579_W.DT_A.1257613205253_T.pla-1257613205253_O.UNK&gclid=Cj0KCQjw6ZOIBhDdARIsAMf8YyFC9ygx9L91SBKGty8cU-Fo_fwBaNpiR54IzxrBNYsqsdJuhAu_aWAaAn8qEALw_wcB">
+                        <img src="./img/tienganh1.png" alt="">
+                        <p>Combo 2 sách Hack Não 1500 + Hack Não Ngữ Pháp - Tặng App học phát âm và ngữ pháp</p>
+                        <p>Chủ Biên: Nguyễn Hiệp</p>
+                        <p>Giá Bán: 610.000 đ</p>
+                        </a>
+                </div>
+                <div  class="mua">
+                    <a href=""><button>MUA</button></a>
+                </div>
+        </div>
+
+        </div>
+                    
+        <div class="khungND">
+                <h4 class="ChuDe" id="THTD">SÁCH TIẾNG HÀN</h4>
+                <div class="TTsach">
+                    <div class="GT">
+                        <a href="https://tiki.vn/luyen-noi-tieng-han-qua-100-chu-de-voi-chau-thuy-trang-p83857110.html?spid=83857111&utm_source=google&utm_medium=cpc&utm_campaign=SEA_NBR_GGL_SMA_DTP_ALL_VN_ALL_UNK_UNK_C.ALL_X.10625984613_Y.106657549322_V.83857111_W.c_A.1257613205653_O.UNK&gclid=CjwKCAjwo4mIBhBsEiwAKgzXOOui94j1sKazF_AmjzEjjIMHMl3obGOMy48cM1itNFrB9knZkFb7VxoCTD0QAvD_BwE">
+                            <img src="./img/h7.jpg" alt="">
+                            <p>Luyện nói tiếng Hàn qua 100 chủ đề với Châu Thùy Trang</p>
+                            <p>Tác Giả: Châu Thùy Trang</p>
+                            <p>Giá Bán: 480.000 đ</p>
+                            </a>
+                    </div>
+                    <div  class="mua">
+                        <a href=""><button>MUA</button></a>
+                    </div>
+                </div>
+                
+                
+            <div class="TTsach">
+                <div class="GT">
+                    <a href="https://tiki.vn/600-cau-giao-tiep-tieng-han-thong-dung-p62648448.html?spid=62648450&utm_source=google&utm_medium=cpc&utm_campaign=SEA_NBR_GGL_SMA_DTP_ALL_VN_BK_UNK_UNK_C.ALL_X.12507845980_Y.118674733323_V.62648450_W.DT_A.1257613205253_T.pla-1257613205253_O.UNK&gclid=CjwKCAjwo4mIBhBsEiwAKgzXOMBIf37jGq8ZwcShgCjyBarqdqSUGRoPePttpsE5w0x8NHTZ63PkCBoCy0gQAvD_BwE">
+                        <img src="./img/h8.jpg" alt="">
+                        <p>600 Câu Giao Tiếp Tiếng Hàn Thông Dụng</p>
+                        <p>Tác Giả: Vân Anh, Nguyễn Hiền</p>
+                        <p>Giá Bán: 97.000 đ</p>
+                        </a>
+                </div>
+                <div  class="mua">
+                    <a href=""><button>MUA</button></a>
+                </div>
+            </div>
+            <div class="TTsach">
+                <div class="GT">
+                    <a href="https://shopee.vn/S%C3%81CH-Ng%E1%BB%AF-Ph%C3%A1p-Ti%E1%BA%BFng-H%C3%A0n-B%E1%BB%8F-T%C3%BAi-i.55485833.2000925138?gclid=CjwKCAjwo4mIBhBsEiwAKgzXOHDlqSEAH75r3AM30Meb25GrkjxoExm2NVxWDGNEOjIZfiM2YQN1AxoCCi8QAvD_BwE">
+                        <img src="./img/h9.jpg" alt="">
+                        <p>SÁCH - Ngữ Pháp Tiếng Hàn Bỏ Túi</p>
+                        <p>Tác Giả: Ngọc Bích _ Trang Đào</p>
+                        <p>Giá Bán: 140.000 đ</p>
+                    </a>
+                </div>
+                    <div  class="mua">
+                        <a href=""><button>MUA</button></a>
+                    </div>
+            </div>
+        </div>
+        <div class="khungND">
+            <h4 class="ChuDe" id="TN">SÁCH TIẾNG NHẬT</h4>
+            <div class="TTsach">
+                <div class="GT">
+                    <a href="https://tiki.vn/chinh-phuc-tieng-nhat-tu-con-so-0-tap-1-p10281636.html?spid=31061625&utm_source=google&utm_medium=cpc&utm_campaign=SEA_NBR_GGL_SMA_DTP_ALL_VN_BK_UNK_UNK_C.ALL_X.12507845980_Y.118674733323_V.31061625_W.DT_A.1257613205253_T.pla-1257613205253_O.UNK&gclid=CjwKCAjwo4mIBhBsEiwAKgzXOKGeVP0A2601BG9fibigTq-T_nW8Bo4v67hI-sW11BuTin0W8g_XYRoC-EAQAvD_BwE">
+                        <img src="./img/h10.jpg" alt="">
+                        <p>Chinh Phục Tiếng Nhật Từ Con Số 0 - Tập 1</p>
+                        <p>Tác Giả: Shukuya Kazuko, Tenbo Chiak.</p>
+                        <p>Giá Bán: 96.000 đ</p>
+                    </a>
+                </div>
+                    <div  class="mua">
+                        <a href=""><button>MUA</button></a>
+                    </div>
+            </div>
+            <div class="TTsach">
+                <div class="GT">
+                    <a href="https://tiki.vn/28-ngay-tu-hoc-tieng-nhat-p46837060.html?spid=48547516&utm_source=google&utm_medium=cpc&utm_campaign=SEA_NBR_GGL_SMA_DTP_ALL_VN_BK_UNK_UNK_C.ALL_X.12507845980_Y.118674733323_V.48547516_W.DT_A.1257613205253_T.pla-1257613205253_O.UNK&gclid=CjwKCAjwo4mIBhBsEiwAKgzXOMuQbkEy8PQQgNBE5prpsVamu0St5XyONZfScrHtiEruk2zMo63uLRoCncEQAvD_BwE">
+                        <img src="./img/h11.jpg" alt="">
+                        <p>28 Ngày Tự Học Tiếng Nhật</p>
+                        <p>Tác Giả: Yu Semi</p>
+                        <p>Giá Bán: 191.000 đ</p>
+                    </a>
+                </div>
+                    <div  class="mua">
+                        <a href=""><button>MUA</button></a>
+                    </div>
+            </div>
+            <div class="TTsach">
+                <div class="GT">
+                    <a href="https://tiki.vn/hikari-10-phut-tu-hoc-tieng-nhat-moi-ngay-sach-mau-kem-tai-file-cd-dinh-kem-tai-ban-p65588311.html?spid=88800004&utm_source=google&utm_medium=cpc&utm_campaign=SEA_NBR_GGL_SMA_DTP_ALL_VN_BK_UNK_UNK_C.ALL_X.12507845980_Y.118674733323_V.88800004_W.DT_A.1257613205253_T.pla-1257613205253_O.UNK&gclid=CjwKCAjwo4mIBhBsEiwAKgzXOECeu_eHizkRvPKGj_L-LmZWWnWij5jh4oxVKw2xGlXqkOHNCTzO1RoC0V4QAvD_BwE">
+                        <img src="./img/h12.jpg" alt="">
+                        <p>Hikari - 10 Phút Tự Học Tiếng Nhật Mỗi Ngày (Sách Màu Kèm Tải File Cd Đính Kèm) - Tái Bản</p>
+                        <p>Tác Giả: The Sakura</p>
+                        <p>Giá Bán: 89.000 đ</p>
+                    </a>
+                </div>
+                    <div  class="mua">
+                        <a href=""><button>MUA</button></a>
+                    </div>
+            </div>
+        </div>
+        <div class="khungND">
+            <h3 class="ChuDe" id="TRUYEN">TRUYỆN</h3>
+            <h4 class="ChuDe" id="TTHUYET">TIỂU THUYẾT</h4>
+            <div class="TTsach">
+                <div class="GT">
+                    <a href="https://newshop.vn/ong-gia-va-bien-ca-tai-ban-2018.html?gclid=CjwKCAjwo4mIBhBsEiwAKgzXOP_Vlgq9u2wFUZKH3iuKqf2fnqke8IPT6Y36ZtGcfTNzyJs8F3o4khoCQzQQAvD_BwE">
+                        <img src="./img/h13.jpg" alt="">
+                        <p>ÔNG GIÀ VÀ BIỂN CẢ (TÁI BẢN 2018)</p>
+                        <p>Tác Giả: Ernest Hemingway</p>
+                        <p>Giá Bán: 39.000 đ</p>
+                    </a>
+                </div>
+                    <div  class="mua">
+                        <a href=""><button>MUA</button></a>
+                    </div>
+            </div>
+            <div class="TTsach">
+                <div class="GT">
+                    <a href="https://tiki.vn/o-buon-nguoi-p28721231.html?spid=38445752&utm_source=google&utm_medium=cpc&utm_campaign=SEA_NBR_GGL_SMA_DTP_ALL_VN_BK_UNK_UNK_C.ALL_X.12507845980_Y.118674733323_V.38445752_W.DT_A.1257613205253_T.pla-1257613205253_O.UNK&gclid=Cj0KCQjw6ZOIBhDdARIsAMf8YyF7yQ7Py4icIIMgxYM9rcLNlPfmoX03Pe0hxaBSRUMalU3BKG9wpjUaAgGkEALw_wcB">
+                        <img src="./img/h14.jpg" alt="">
+                        <p>Ổ Buôn Người</p>
+                        <p>Tác Giả: Giản Tư Hải</p>
+                        <p>Giá Bán: 75.000 đ</p>
+                    </a>
+                </div>
+                    <div  class="mua">
+                        <a href=""><button>MUA</button></a>
+                    </div>
+            </div>
+        </div>
+
+        <div class="khungND">
+            <h4 class="ChuDe" id="TNT">TRUYỆN NGÔN TÌNH</h4>
+            <div class="TTsach">
+                <div class="GT">
+                    <a href="https://www.fahasa.com/huu-phi-ban-thuong-bo-4-cuon.html?utm_source=google&utm_medium=cpc&utm_campaign=TQ_Shopping_na_na_na_na_na_na_Smart&gclid=Cj0KCQjw6ZOIBhDdARIsAMf8YyGZ1phIGM_KWhe6DNP0p3BrZ1SZgYYpxfywrp7HG7Dp2Q-oxXfTytsaAtGAEALw_wcB">
+                        <img src="./img/ngontinh1.jpg" alt="">
+                        <p>Hữu Phỉ - Bản Thường (Bộ 4 Cuốn)</p>
+                        <p>Tác Giả:Priest</p>
+                        <p>Giá Bán: 520.000 đ</p>
+                    </a>
+                </div>
+                <div  class="mua">
+                        <a href=""><button>MUA</button></a>
+                </div>
+            </div>
+            <div class="TTsach">
+                <div class="GT">
+                    <a href="https://tiki.vn/truyen-ngon-tinh-hay-cuc-hu-nu-gaga-p72512009.html?spid=79734373&utm_source=google&utm_medium=cpc&utm_campaign=SEA_NBR_GGL_SMA_DTP_ALL_VN_BK_UNK_UNK_C.ALL_X.12507845980_Y.118674733323_V.79734373_W.DT_A.1257613205253_T.pla-1257613205253_O.UNK&gclid=Cj0KCQjw6ZOIBhDdARIsAMf8YyGyMvASr_yjOr_zWeLCmI9xJYzrHTAQueeEQpD1Hot5vgjBn0ELfIUaAqzYEALw_wcB">
+                        <img src="./img/ngontinh2.png" alt="">
+                        <p>Truyện ngôn tình hay cực: Hủ Nữ GaGa</p>
+                        <p>Tác Giả: Mèo Lười Ngủ Ngày</p>
+                        <p>Giá Bán: 109.000 đ</p>
+                    </a>
+                </div>
+                <div  class="mua">
+                        <a href=""><button>MUA</button></a>
+                </div>
+            </div>
+            <div class="TTsach">
+                <div class="GT">
+                    <a href="https://tiki.vn/tron-bo-6-tap-truyen-tranh-tiem-do-co-a-xa-p11188075.html?spid=37970972&utm_source=google&utm_medium=cpc&utm_campaign=SEA_NBR_GGL_SMA_DTP_ALL_VN_BK_UNK_UNK_C.ALL_X.12507845980_Y.118674733323_V.37970972_W.DT_A.1257613205253_T.pla-1257613205253_O.UNK&gclid=Cj0KCQjw6ZOIBhDdARIsAMf8YyEB16YRt3FurcOI_E-IPkmFc7sF-j7jWfipFFQ79aNYrsUXhsgSe8waAg77EALw_wcB">
+                        <img src="./img/ngontinh3.png" alt="">
+                        <p>Trọn bộ 6 Tập Truyện tranh Tiệm đồ cổ Á Xá</p>
+                        <p>Tác Giả: Huyền Sắc</p>
+                        <p>Giá Bán: 297.000 đ</p>
+                    </a>
+                </div>
+                <div  class="mua">
+                        <a href=""><button>MUA</button></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="khungND">
+        <h4 class="ChuDe" id="TTT">TRUYỆN TRINH THÁM</h4>
+        <div class="TTsach">
+            <div class="GT">
+                <a href="https://www.fahasa.com/tham-tu-lung-danh-conan-hoat-hinh-mau-khinh-khi-cau-mac-nan-tap-1-tai-ban-2019.html?utm_source=google&utm_medium=cpc&utm_campaign=TQ_Shopping_na_na_na_na_na_na_Smart&gclid=Cj0KCQjw6ZOIBhDdARIsAMf8YyGrWSWAv4YUNMJpltJmjUm0p7vy9vnOT7rWq50dqH8YLe5vGUMCTIEaAgb2EALw_wcB">
+                    <img src="./img/conan1.jpg" alt="">
+                    <p>Thám Tử Lừng Danh Conan Hoạt Hình Màu: Khinh Khí Cầu Mắc Nạn Tập 1 (Tái Bản 2019)</p>
+                    <p>Tác Giả: Gosho Aoyama</p>
+                    <p>Giá Bán: 45.000 đ</p>
+                </a>
+            </div>
+            <div  class="mua">
+                    <a href=""><button>MUA</button></a>
+            </div>
+        </div>
+        <div class="TTsach">
+            <div class="GT">
+                <a href="https://requaluonne.com/san-pham/truyen-tranh-conan-hoat-hinh-mau-ao-thuat-gia-cuoi-cung-cua-the-ky-tron-bo-2-tap-tham-tu-lung-danh-nxb-kim-dong-s408947013-p9636145673.html">
+                    <img src="./img/conan2.jpg" alt="">
+                    <p>Truyện tranh Conan hoạt hình màu: Ảo thuật gia cuối cùng của Thế kỷ - Trọn bộ 2 tập</p>
+                    <p>Tác Giả: Gosho Aoyama</p>
+                    <p>Giá Bán: 119.000 đ</p>
+                </a>
+            </div>
+            <div  class="mua">
+                    <a href=""><button>MUA</button></a>
+            </div>
+        </div>
+        <div class="TTsach">
+            <div class="GT">
+                <a href="https://tiki.vn/tham-tu-lung-danh-conan-hoat-hinh-mau-me-cung-trong-thanh-pho-co-tap-2-p104272693.html?spid=105990071&utm_source=google&utm_medium=cpc&utm_campaign=SEA_NBR_GGL_SMA_DTP_ALL_VN_BK_UNK_UNK_C.ALL_X.12507845980_Y.118674733323_V.105990071_W.DT_A.1257613205253_T.pla-1257613205253_O.UNK&gclid=Cj0KCQjw6ZOIBhDdARIsAMf8YyEUVEtAG511pWIlb-GGccBglRu7MP9Pqy_G2PNKwED_-aVI9uaICgcaAqjsEALw_wcB">
+                    <img src="./img/conan3.jpg" alt="">
+                    <p>Thám Tử Lừng Danh Conan Hoạt Hình Màu: Mê Cung Trong Thành Phố Cổ - Tập 2</p>
+                    <p>Tác Giả: Gosho Aoyama</p>
+                    <p>Giá Bán: 60.000 đ</p>
+                </a>
+            </div>
+            <div  class="mua">
+                    <a href=""><button>MUA</button></a>
+            </div>
+        </div>
+        
+        <div class="TTsach">
+            <div class="GT">
+                <a href="https://www.fahasa.com/tham-tu-lung-danh-conan-hoat-hinh-mau-15-phut-tram-mac-tap-1-tai-ban-2019.html?utm_source=google&utm_medium=cpc&utm_campaign=TQ_Shopping_na_na_na_na_na_na_Smart&gclid=Cj0KCQjw6ZOIBhDdARIsAMf8YyFFdNWPDVeKOiU1AGJjrJiVo4X8gpSj2Egww7m3CDscED8NLP0qbMsaAnYtEALw_wcB">
+                    <img src="./img/conan4.jpg" alt="">
+                    <p>Thám Tử Lừng Danh Conan Hoạt Hình Màu: 15 Phút Trầm Mặc Tập 1 (Tái Bản 2019)</p>
+                    <p>Tác Giả: Gosho Aoyama</p>
+                    <p>Giá Bán: 45.000 đ</p>
+                </a>
+            </div>
+            <div  class="mua">
+                    <a href=""><button>MUA</button></a>
+            </div>
+        </div>
+        <div class="TTsach">
+            <div class="GT">
+                <a href="https://www.fahasa.com/boxset-sherlock-bo-3-tap-phien-ban-manga.html?utm_source=google&utm_medium=cpc&utm_campaign=TQ_Shopping_na_na_na_na_na_na_Smart&gclid=Cj0KCQjw6ZOIBhDdARIsAMf8YyFH4uHf_qMwfjcpBzEJQAeQ2vI61n02RPxNZdrRbmTCaxkWYa268H8aAhsFEALw_wcB">
+                    <img src="./img/sherlock.jpg" alt="">
+                    <p>Boxset SHERLOCK (Bộ 3 Tập) - Phiên Bản Manga</p>
+                    <p>Tác Giả: Steven Moffat, Mark Gatiss, Jay</p>
+                    <p>Giá Bán: 136.000 đ</p>
+                </a>
+            </div>
+            <div  class="mua">
+                    <a href=""><button>MUA</button></a>
+            </div>
+        </div>
+        <div class="TTsach">
+            <div class="GT">
+                <a href="https://minhlongbook.vn/products/nhung-cuoc-phieu-luu-cua-sherlock-holmes?variant=1020837618&source=googleshop&utm_campaign=promotion&utm_content=books&utm_medium=Social&utm_source=facebook&gclid=Cj0KCQjw6ZOIBhDdARIsAMf8YyGFcUnUj2AqdeEhuvPwJ4h5-t39W9Mcpf7NHkXGDnRDR9TVRjRdfv8aAnUsEALw_wcB">
+                    <img src="./img/sherlock2.jpg" alt="">
+                    <p>Boxset SHERLOCK (Bộ 3 Tập) - Phiên Bản Manga</p>
+                    <p>Tác Giả: Arthur Conan Doyle</p>
+                    <p>Giá Bán: 56.000 đ</p>
+                </a>
+            </div>
+            <div  class="mua">
+                    <a href=""><button>MUA</button></a>
+            </div>
+        </div>
+        <div class="TTsach">
+            <div class="GT">
+                <a href="https://tiki.vn/doc-tham-tap-3-truyen-trinh-tham-tam-ly-phien-ban-moi-tang-kem-2-postcard-lac-mot-noi-01-tam-tu-ngai-mot-noi-p54377331.html?spid=54377332&utm_source=google&utm_medium=cpc&utm_campaign=SEA_NBR_GGL_SMA_DTP_ALL_VN_BK_UNK_UNK_C.ALL_X.12507845980_Y.118674733323_V.54377332_W.DT_A.1257613205253_T.pla-1257613205253_O.UNK&gclid=Cj0KCQjw6ZOIBhDdARIsAMf8YyHNgxsrLxI3wKw9e3ERDBHfo5rYsHg5AKBBt7ierUpy8igHVl9zwF0aAnxWEALw_wcB">
+                    <img src="./img/trinhtham1.jpg" alt="">
+                    <p>Đọc Thầm - Tập 3 - Truyện Trinh Thám Tâm Lý</p>
+                    <p>Tác Giả: Priest</p>
+                    <p>Giá Bán: 257.000 đ</p>
+                </a>
+            </div>
+            <div  class="mua">
+                    <a href=""><button>MUA</button></a>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+
+    <div id="footer">
+        <footer class="text-center text-white" style="background-color: #f1f1f1;">
+            <!-- Grid container -->
+            <div class="container pt-4">
+              <!-- Section: Social media -->
+              <section class="mb-4">
+                <!-- Facebook -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab ti-facebook"></i
+                ></a>
+          
+                <!-- Twitter -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab ti-twitter-alt"></i
+                ></a>
+          
+                
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab ti-android"></i
+                ></a>
+          
+                <!-- Instagram -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab ti-instagram"></i
+                ></a>
+          
+                <!-- Google -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab ti-google"></i
+                ></a>
+              </section>
+              <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+          
+            <!-- Copyright -->
+            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                <p>NHỮNG NGƯỜI SÁNG LẬP WEB</p>
+              <a href="https://www.facebook.com/duy.phamtan.7127/" class="text-dark">
+                PHẠM TẤN DUY-2001200772 <br>
+              </a>
+              © 2022 Copyright:
+              <a class="text-dark" href="#">WeBook</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+    </div>
+
+    <script>
+        var index=1;
+        getimg = function(){
+            var imgss = ["img/h15.jpg","img/logo1.jpg","img/tieude3.jpg"];
+            document.getElementById('imgs').src = imgss[index];
+            index++;
+            if(index==3){
+                index=0;
+            }
+        }
+        setInterval(getimg,3000);
+    </script>
+   
+    
+
+    <!-- bootstap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
